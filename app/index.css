@@ -27,6 +27,38 @@ li {
      text-align: center;
 }
 
+.row {
+     display: flex;
+     justify-content: space-around;
+}
+
+.column{
+     display: flex;
+     flex-direction: column;
+     width: 500px;
+     align-items: center;
+}
+
+.column input {
+     border-radius: 10px;
+     margin: 12px 0;
+     padding: 8px;
+     border: 1px solid purple;
+     font-size: 16px;
+     width: 80%;
+}
+
+.column label {
+     text-align: center;
+     font-size: 30px;
+     font-weight: 200;
+}
+
+.header {
+     text-align: center;
+
+}
+
 .button {
      color: #e6e6e6;
      background: #0a0a0a;
@@ -52,6 +84,19 @@ li {
 
 .button:active {
      transform: translateY(1px);
+}
+
+.reset{
+     border: none;
+     background: transparent;
+     color: #d0021b;
+     display: block;
+     width: 100%;
+     text-align: center;
+}
+
+.reset:hover {
+     cursor: pointer;
 }
 
 .languages {
@@ -86,7 +131,6 @@ li {
      border: .5px solid #666;
      border-radius: 5px;
      margin: 20px 5px;
-     /* font-size: 10px; */
      padding: 5px;
      text-align: center;
      -webkit-box-shadow: 2px 2px 37px -3px rgba(0, 0, 0, 0.24);
@@ -106,37 +150,34 @@ li {
      display: flex;
      flex-direction: column;
      align-content: space-between;
-     padding-top: 20px;     
+     padding-top: 20px;
      width: 100%;
 }
 
 .details {
-     font-size: 35px;
+     font-size: 18px;
      height: 100%;
      margin-top: 10px;
 }
 
 .avatar {
      margin: 0 auto;
-     width: 150px;
+     width: 50px;
      border-radius: 50%;
 }
 
 .popular-rank {
-     /* font-weight: bold; */
+     font-size: 15px;
      position: relative;
-     top: 40px;
-     left: 20px;
+     top: 0;
+     left: 0;
      background: #fff;
      color: #666;
-     width: 30px;
-     height: 30px;
-     font-size: 25px;
-     padding: .20em;
-     /* margin-top: 50px; */
-     border-top: .5px solid #666;
-     border-radius: 50%;
+     font-size: 18px;
+     padding: 5px 0;
+     border-right: .5px solid #666;
      z-index: 100;
+     text-align: center;
 }
 
 .nav {
