@@ -4,8 +4,8 @@ var Link = require('react-router-dom').Link;
 
 function PlayerPreview(props){
   return(
-    <div>
-      <div className='column'>
+    <div className="player-preview">
+      <div>
         <img
         className='avatar'
         src={props.avatar}
@@ -98,7 +98,7 @@ class Battle extends React.Component {
       playerOneName: '',
       playerTwoName: '',
       playerOneImage: null,
-      palyerTwoImage: null,
+      playerTwoImage: null,
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleReset = this.handleReset.bind(this);
@@ -124,14 +124,14 @@ class Battle extends React.Component {
   }
 
   render() {
-    var playerOneName = this.state.playerOneName;
-    var playerTwoName = this.state.playerTwoName;
+    var playerOneName =  this.state.playerOneName;
+    var playerTwoName =  this.state.playerTwoName;
     var playerOneImage = this.state.playerOneImage;
     var playerTwoImage = this.state.playerTwoImage;
     var match = this.props.match;
 
     return (
-    <div>
+    <div className='battle'>
       <div className='row'>
         {/* Before name submit render form */}
         {!playerOneName &&
@@ -174,7 +174,7 @@ class Battle extends React.Component {
         to={{
           pathname: match.url + '/results',
           search: `?playerOneName=` + playerOneName +
-          `playerTwoName=` + playerTwoName
+          `&playerTwoName=` + playerTwoName
           }}>
           Battle
         </Link>}
