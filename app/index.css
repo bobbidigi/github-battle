@@ -128,7 +128,8 @@ li {
      margin: 5px;
      padding: 3px;
      border-radius: 3px;
-     font-weight: bold;
+     font-weight: normal;
+     font-size: 16px;
      cursor: pointer;
      -webkit-box-shadow: 2px 2px 37px -3px rgba(0, 0, 0, 0.24);
      -moz-box-shadow: 2px 2px 37px -3px rgba(0, 0, 0, 0.24);
@@ -144,9 +145,8 @@ li {
      background: #fff;
      display: flex;
      flex-direction: row;
-     border: .5px solid #666;
      border-radius: 5px;
-     margin: 20px 5px;
+     margin: 20px 50px;
      padding: 5px;
      text-align: center;
      -webkit-box-shadow: 2px 2px 37px -3px rgba(0, 0, 0, 0.24);
@@ -155,14 +155,14 @@ li {
 }
 
 .space-list-items {
-     display: flex;
-     flex-direction: row;
+     /* display: flex; */
+     /* flex-direction: row; */
      width: 100%;
      height: 100%;
 }
 
 .space-list-details {
-     margin-left: 5px;
+     /* margin-left: 5px; */
      display: flex;
      flex-direction: column;
      align-content: space-between;
@@ -171,7 +171,7 @@ li {
 }
 
 .details {
-     font-size: 18px;
+     font-size: 12px;
      height: 100%;
      margin-top: 10px;
 }
@@ -191,14 +191,17 @@ li {
 
 .popular-rank {
      font-size: 15px;
+     display: block;
      position: relative;
-     top: 0;
-     left: 0;
+     /* top: 0; */
+     left: 50%;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
      background: #fff;
      color: #666;
      font-size: 18px;
-     padding: 5px 0;
-     border-right: .5px solid #666;
+     border: .5px solid #666;
      z-index: 100;
      text-align: center;
 }
