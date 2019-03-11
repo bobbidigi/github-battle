@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "react-scripts build",
+    "production": "webpack -p",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
