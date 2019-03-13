@@ -12,7 +12,7 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "production": "webpack -p",
-    "deploy": "npm run production && gh-pages -d ."
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
